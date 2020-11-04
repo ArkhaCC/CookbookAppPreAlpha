@@ -1,5 +1,4 @@
 ﻿using CookbookApp.Model.CookbookApp.Model;
-using IronPdf;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
