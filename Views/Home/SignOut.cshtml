@@ -1,0 +1,28 @@
+﻿@model CookbookApp.Models.SignOut
+
+@{
+    ViewData["Title"] = "SignOut";
+}
+
+<h1>Until Next Time!</h1>
+
+<h4>Enjoy Your Meal!</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SignOut">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="submit" value="Sign Out" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to Home</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,25 @@
+﻿
+@model List<Uri>
+
+@{
+    ViewData["Title"] = "DisplaySelectedRecipe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+@if (Model != null)
+{
+    @foreach (var item in Model)
+    {
+        
+<div class="imageBlock">
+    <a href="@item" target="_blank"><img class="thumb" src="@item" alt= "@item"  /></a><br />
+    </div>
+
+    }
+    }
+
+
